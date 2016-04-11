@@ -1,0 +1,20 @@
+{
+  "name": "cssbin",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Luis Alberto Martinez <luis.martinezriancho@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/dist/scripts/bower_components",
+    "test",
+    "tests"
+  ]
+}
