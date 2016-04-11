@@ -4,7 +4,7 @@ var open = require('gulp-open');
 
 var distribution = 'public/dist';
 var jsSources = [distribution + '/**/*.js'];
-var cssSources = [distribution + '/styles/*.css'];
+var cssSources = [distribution + '/**/*.css'];
 var htmlSources = [distribution + '/**/*.html'];
 
 var port = process.env.PORT || 9000;
@@ -40,7 +40,7 @@ gulp.task('watch', function() {
 
 gulp.task('open', function() {
     var options = {
-        uri: 'localhost:' + port + '/' + distribution + '/index.html',
+        uri: 'localhost:' + port + '/' + distribution + '/exercises/',
         app: 'firefox'
     };
     gulp.src(__filename)
