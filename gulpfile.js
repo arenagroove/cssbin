@@ -6,6 +6,7 @@ var distribution = 'public/dist';
 var jsSources = [distribution + '/**/*.js'];
 var cssSources = [distribution + '/**/*.css'];
 var htmlSources = [distribution + '/**/*.html'];
+var exercisesDir = [distribution + '/**/*.*'];
 
 var port = process.env.PORT || 9000;
 
@@ -31,10 +32,16 @@ gulp.task('js', function() {
         .pipe(connect.reload())
 });
 
+gulp.task('exercises', function() {
+    gulp.src(exercisesDir)
+        .pipe(connect.reload())
+});
+
 gulp.task('watch', function() {
     gulp.watch(jsSources, ['js']);
     gulp.watch(cssSources, ['css']);
     gulp.watch(htmlSources, ['html']);
+    gulp.watch(exercisesDir, ['exercises']);
 });
 
 
@@ -48,4 +55,4 @@ gulp.task('open', function() {
 });
 
 
-gulp.task('default', ['html', 'css', 'js', 'connect', 'watch', 'open']);
+gulp.task('default', ['exercises','html', 'css', 'js', 'connect', 'watch', 'open']);

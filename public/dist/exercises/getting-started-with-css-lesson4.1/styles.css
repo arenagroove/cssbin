@@ -1,0 +1,15 @@
+/* color and inheritance */
+
+p
+{
+	border: 1px solid green;
+	color: red;
+	font-size:200%;
+}
+
+p em
+{
+	font-size:50%;
+	border: 1px solid black;
+	color: orange;
+}

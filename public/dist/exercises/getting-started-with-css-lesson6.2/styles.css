@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-size: 100%;
+}
+
+h1 {
+    margin: 0 0 .5em;
+}
+
+h2 {
+    margin: 0;
+}
+
+.test {
+    background: yellow;
+
+}
+
+
+/* add rules here */
+
+.test01 {
+    width: 200px;
+}
+
+.test02 {
+    height: 30px;
+}
+
+.test03 {
+    display: inline-block;
+    /*margin: 0 1em 0 6em;*/
+    /*border: 1px solid red;*/
+    padding: 0 2em 0 6em;
+
+}
+
+.test04 {
+    padding: 0 2em 0 2em;
+}
+
+.test05 {
+    border: 1px solid red;
+}
+

@@ -48,6 +48,7 @@ h6 {
     background: #000;
 }
 
+
 #main {
     /* background: #FFCC99;*/
     margin: 1em 2em;
@@ -102,29 +103,26 @@ h4 + p {
 
 
 /* link pseudo-class selectors */
+
+
 /* LOVE AND HATE*/
 
-a:link
-{
-	color: green;
-}
-a:visited
-{
-	color: brown;
+a:link {
+    color: green;
 }
 
-a:hover
-{
-	color: lime;
+a:visited {
+    color: brown;
 }
 
-a:focus
-{
-	color: black;
+a:hover {
+    color: lime;
 }
 
-a:active
-{
-	color: darkorange;
+a:focus {
+    color: black;
 }
 
+a:active {
+    color: darkorange;
+}
